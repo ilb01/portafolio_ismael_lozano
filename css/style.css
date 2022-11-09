@@ -1,0 +1,203 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css");
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #000;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+/*Cabecera*/
+header{
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: 70px;
+    margin-bottom: 15px;
+}
+header .titulo{
+    font-weight: bold;
+    margin-left: 15px;
+    border-bottom: 1px solid white;
+}
+header .titulo:hover{
+    color: #DB4312;
+    border-bottom: 1px solid #DB4312;
+}
+
+nav{
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+}
+nav a{
+    margin-left: 120px;
+    text-decoration: none;
+    color: white;
+}
+nav a:hover{
+    border-bottom: 1px solid #DB4312;
+    color: #DB4312;
+}
+/*Centrado*/
+main, footer .contacto{
+    margin: 15px;
+}
+main .portada{
+    padding: 80px;
+    margin-bottom: 60px;
+    width: auto;
+}
+main .m_hola{
+    color: #DB4312;
+}
+
+button{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; ;
+    background-color: #DB4312;
+    cursor: pointer;
+    border: none;
+}
+button a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+.portada h2{
+    font-size: 80px;
+}
+.portada h4{
+    font-size: 25px;
+    font-style: italic;
+}
+div .grid{
+    margin: 40px 0;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: space-between;
+    row-gap: 2rem;
+    column-gap: 1rem;
+    padding: 5px 10%;
+}
+main .sobre_nosotros{
+    margin: 0 180px;
+    padding: 30px;
+    background-color: #DB4312;
+    border-radius: 5px;
+    width: auto;
+    color: white;
+    height: auto;
+    box-shadow: 9px 13px 18px 2px rgba(219,67,18,0.63);
+}
+.sobre_nosotros h2{
+    font-size: 50px;
+}
+.sobre_nosotros h3{
+    font-style: italic;
+    margin-bottom: 15px;
+}
+.sobre_nosotros button{
+    background-color: white;
+}
+.sobre_nosotros p {
+    color: #e6e6e6;
+}
+.sobre_nosotros button a{
+    color: #DB4312;
+}
+
+.servicios{
+    margin-top: 80px;
+}
+.servicios h4{
+    color: e6e6e6;
+}
+.grid article{
+    padding-top: 40px;
+    text-align: center;
+    background-color: #DB4312;
+    height: auto;
+    width: auto;
+    box-shadow: 9px 13px 18px 2px rgba(219,67,18,0.63);
+}
+div .grid article button{
+    margin: 30px 0 ;
+    background-color: white;
+}
+div .grid article a{
+    color: #DB4312;
+}
+article h1 {
+    margin-top: 10px;
+}
+.grid span{
+    padding: 10px 15px;
+    border-radius: 200px;
+    background-color: white;
+    color: #DB4312;
+}
+article p{
+    padding: 5px 10px;
+    font-size: auto;
+    color:white;
+}
+/*Pie de página*/
+
+.footer_1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-color: #DB4312;
+    height: 300px;
+}
+.footer_1 h1{
+    padding-bottom: 5px;
+    border-bottom: 2px solid white;
+}
+.footer_1 button{
+    background-color: white;
+}
+.footer_1 button a{
+    color: #DB4312;
+}
+.contacto{
+
+}
+.sociales{
+    position: absolute;
+    top: 1000px;
+    right:-8px;
+    background-color: #DB4312;
+
+}
+.sociales a{
+    color: white;
+    text-decoration: none;
+    
+}
+.sociales i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    
+}
+.final{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 100px;
+}
