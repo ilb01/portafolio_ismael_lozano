@@ -20,6 +20,7 @@ header{
     margin-bottom: 15px;
 }
 header .titulo{
+    padding-top: 5px;
     font-weight: bold;
     margin-left: 15px;
     border-bottom: 1px solid white;
@@ -35,7 +36,6 @@ nav{
     justify-content: space-evenly;
 }
 nav a{
-    margin-left: 120px;
     color: white;
 }
 nav a:hover{
@@ -90,6 +90,7 @@ main .m_hola{
 
 .botones_2{
     margin-top: 20px;
+    
 }
 .botones_2 a{
     margin: 10px;
@@ -325,7 +326,10 @@ div input{
     display:flex;
     justify-content: space-between;    
 }
-
+i:hover {
+    transform: scale(1.4);
+    transition: 0.5s all;
+}
 /* MEDIA QUERIES */
 /* Lletra més petita per a tablet gran */
 @media (max-width: 952px){
