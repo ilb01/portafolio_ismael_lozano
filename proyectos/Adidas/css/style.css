@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+
+body{
+    background-color: #131313;
+    color: white;
+    font-family:'Poppins', sans-serif;
+}
+
+.caja{
+    position: absolute;
+    top:5%;
+    left: 35%;
+    background-color: #232323e7;
+    width: 400px;
+    height: 540px;
+    border-radius: 10px;
+}
+.bota{
+    
+    margin-left: 50px ;
+    transform: rotate(-20deg);
+    width: 300px;
+    height: 300px;
+}
+.fondo{
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    width: 330px;
+    height: 250px;
+    z-index: -10;
+}
+.fondo_esquina{
+    position: absolute;
+    left: -8px;    
+    width: 409px;
+    height: 280px;
+    background-color: #1DDB2F;
+    clip-path: ellipse(67% 48% at 63% 16%);
+    z-index: -0;
+    border-radius: 10px;
+}
+
+button{
+    font-family:'Poppins', sans-serif;
+    font-weight: bolder;
+    width: 120px;
+    height: 50px;
+    border-radius: 5px ;
+    border: none;
+}
+.info{
+    position: absolute;
+    top:240px;
+    padding-left: 95px;
+    padding-bottom: 2px;
+}
+h2{
+    font-size: xx-large;
+    text-align: center;
+}
+p{
+    font-weight: normal;
+    color: #A3B0BF;
+}
+.numeros{
+    border-radius: 7px ;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    padding: 5px;
+    margin-left: 10px;
+}
+.numeros:hover{
+    cursor: pointer;
+    color: white;
+    background-color: #1DDB2F;
+}
+.verde{
+    color: #1DDB2F;
+}
+.azul{
+    color: blue;
+}
+.rojo{
+    color: red;
+}
+button:hover{
+    cursor: pointer;
+    color: white;
+    background-color: #1DDB2F;
+}

@@ -266,13 +266,15 @@ article p{
     width: 800px;
     height: 500px;
     margin-bottom: 100px;
+    padding: 0px 50px;
+    text-align: center;
 }
 .formulario h1{
     padding-bottom: 30px;
 }
 div input{
     display: flex;
-    margin-top: 10px;
+    margin-top: 20px;
     width: 200px;
     height: 20px;
     background-color: transparent;
@@ -280,6 +282,7 @@ div input{
     border-top: none ;
     border-right: none;
     border-left: none ;
+    color: white;
 }
 
 .contacto2 a{
@@ -296,7 +299,7 @@ div input{
 }
 
 .submit{
-    margin: 10px;
+    margin: 20px;
     padding: 10px;
     border-radius: 5px;
     width: 120px;
@@ -311,10 +314,18 @@ div input{
     color: #DB4312;
     font-weight: bold;
 }
+.submit:hover{
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
 
 .redes{
     display:flex;
+    justify-content: space-between;    
 }
+
 /* MEDIA QUERIES */
 /* Lletra més petita per a tablet gran */
 @media (max-width: 952px){

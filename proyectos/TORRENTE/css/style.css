@@ -1,0 +1,107 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+
+:root{
+    --backgroundPrincipal: #B70606;
+    --colorTexto: white;
+}
+* {
+    box-sizing: border-box;
+    /*margin: 0;
+    padding: 0;*/
+}
+
+body{
+    background-color: black;
+    font-family: "Helvetica Neue, Helvetica, Arial, sans-serif";
+}
+
+.card{
+    background-color: var(--backgroundPrincipal);
+    color: var(--colorTexto);
+
+
+    height: 500px;
+    width: 350px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px #640503;
+}
+
+.portada{
+    background: linear-gradient(180deg, rgba(255,51,0,0) 33%, rgba(153,38,13,1) 89%), url(../img/torrente.jpg);
+    border-radius: 5px;
+    background-size: cover;
+    height: 60%;
+    position: relative;
+}
+
+.portada h2{
+    text-align: center;
+    color:  #FFB400;
+    text-shadow: 2px 2px 2px #5C0402;
+    padding-top: 65%;
+    font-size: 50px;
+    font-family: 'League Gothic', sans-serif;
+    letter-spacing: 2px;    
+}
+.portada .serie-top{
+    position: absolute;
+    top: 0;
+    right: 20px;
+    z-index: 5;
+
+    padding-top: 5px;
+    text-align: center;
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+    background-color: #7A1B07;
+    clip-path: polygon(0% 0%, 100% 0, 100% 100%, 50% 54%, 0% 100%);
+}
+.info{
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+    line-height: 18px;
+}
+.portada::after{
+    content: "Netflix";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 5;
+    background-color: #E50914;
+    width: 80px;
+    height: 20px;
+    text-align: center ;
+    border-radius: 4px;
+    padding: 5px 0;
+
+}
+.panel-buttons{
+    text-align: center;
+}
+.panel-buttons button{
+    margin: 0 13px 0 13px;
+    text-transform:  uppercase;
+    background-color: #8b200b;
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.panel-buttons .fa-solid{
+    color: white;
+    padding-right:2px ;
+}
+
+.panel-buttons button:hover{
+    background-color: #99270dcc;
+    transform: scale(1.1, 1.1);
+    transition: transform 0.5s ease;
+}

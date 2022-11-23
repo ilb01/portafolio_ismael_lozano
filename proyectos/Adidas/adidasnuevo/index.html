@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adidas</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+        *{
+            /**Box-sizing hace que no se sumen el margin y el padding**/
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /*CENTRAR LA CAJA*/
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .card{
+            position: relative;
+            height: 400px;
+            width: 320px;
+            background-color: #222222;
+            
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            
+            border-radius: 10px;
+            text-align: center;
+            overflow: hidden;
+        }
+        .card::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: #1DDB2F;
+            clip-path: circle(250px at 80% -20%);
+        }
+        .card::before{
+            content: 'ADIDAS';
+            position: absolute;
+            top: 100px;
+            left: -40px;
+            width: 100%;
+            height: 100%;
+            z-index: 10;
+            text-align: center;
+            font-size: 8rem;
+            color: #1ddb3081;
+        }
+        .card .img-box{
+            height: 200px;
+            position: relative;
+        }
+        .card .img-box img{
+            position: absolute;
+            top: 0;
+            left: 60px;
+            z-index: 10;
+            margin-top: 30px;
+            width: 220px;
+            /*ROTAR LA IMAGEN*/
+            transform: rotate(-20deg);
+        }
+        .card .size-box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card .size-box span{
+            display: inline-block;
+            width: 26px;
+            height: 26px;
+            line-height: 26px;
+            background-color: white;
+            color: black;
+            border-radius: 5px;
+            margin: 10px 8px;
+            font-size: 14px;
+        }
+        .card .color-box span{
+            display: inline-block;
+            width: 26px;
+            height: 26px;
+            line-height: 26px;
+            background-color: white;
+            color: black;
+            border-radius: 50%;
+            margin: 8px 8px;
+            font-size: 14px;
+        }
+        .color-green{
+            background-color: green;
+        }
+        .color-blue{
+            background-color: blue;
+        }
+        .color-red{
+            background-color: red;
+        }
+        
+        
+        
+        
+        
+
+    </style>
+</head>
+<body>
+    
+    <article class="card">
+        <section class="img-box">
+            <img src="../img/bota.png">
+        </section>
+        <section class="content box">
+            <h2>Adidas Shoes</h2>
+            <div class="size-box">
+                <h3>Size</h3>
+                <span>42</span>
+                <span>43</span>
+                <span>44</span>
+                <span>45</span>
+            </div>
+            
+            <div class="color-box">
+                <h3>Color</h3>
+                <span class="color-green"></span>
+                <span class="color-blue"></span>
+                <span class="color-red"></span>
+            </div>
+            <button>Buy now</button>
+        </section>
+    </article>
+
+</body>
+</html>
