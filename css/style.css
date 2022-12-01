@@ -434,9 +434,25 @@ i:hover {
     .sociales {
         display: none;
     }
-
+    .portada{
+        margin: 0 0 60px 20px;
+        font-size: 20px;
+    }
+    .portada img {
+        position: absolute;
+        object-fit: cover;
+        top: 120px;
+        left: 220px;
+        width: 245px;
+        height: 400px;
+        z-index: -1;
+    }
     .sobre_nosotros {
         font-size: 10px;
+        margin: 0;
+    }
+    .sobre_nosotros img{
+        display: none;
     }
 
     .final {
@@ -448,5 +464,14 @@ i:hover {
         display: grid;
         grid-template-columns: auto auto;
         justify-content: center;
+    }
+    .formulario{
+        font-size: 10px;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .footer_1{
+        font-size: 15px;
     }
 }
