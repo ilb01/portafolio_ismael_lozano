@@ -22,6 +22,9 @@ header {
     width: auto;
     height: 70px;
     margin-bottom: 20px;
+    position: sticky;
+    position: -webkit-sticky;
+
 }
 
 header .titulo {
@@ -70,6 +73,10 @@ header a {
 /*Centrado*/
 .portada {
     margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left:100px ;
 }
 
 .m_hola {
@@ -286,8 +293,15 @@ article p {
 /* CONTACTO */
 .c_contacto {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.info{
+    display: flex;
+    justify-content: center;
+    text-align: center;
     flex-direction: column;
 }
 
@@ -300,7 +314,7 @@ article p {
     background-color: #DB4312;
     width: 800px;
     height: 400px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     padding: 0px 50px;
     text-align: center;
 }
@@ -327,12 +341,6 @@ div input {
     flex-direction: row;
     color: white;
     font-size: 30px;
-}
-
-.fa-at {
-    font-size: 80px;
-    font-weight: bold;
-    padding: 20px 0;
 }
 
 .submit {
@@ -393,8 +401,8 @@ i:hover {
     /* El menú canvia de forma i es crea a altra dimensió*/
     #menu {
         display: block;
-        height: 100%;
-        width: 45%;
+        height: 100vh;
+        width: 100%;
         background: #DB4312;
 
         position: fixed;
@@ -435,5 +443,10 @@ i:hover {
         margin: 10px;
         text-align: center;
         font-size: 10px;
+    }
+    div .grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
     }
 }
