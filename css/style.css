@@ -455,6 +455,14 @@ i:hover {
     width: 100px;
     height: 50px;
 }
+footer  a{
+    color: white;
+    margin-bottom: 5px;
+}
+footer  a:hover{
+    color: #DB4312 ;
+}
+
 /* MEDIA QUERIES */
 /* Lletra més petita per a tablet gran */
 @media (max-width: 952px) {
