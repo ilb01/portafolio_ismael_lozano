@@ -22,8 +22,7 @@ header {
     width: auto;
     height: 70px;
     margin-bottom: 20px;
-    position: sticky;
-    position: -webkit-sticky;
+    
 
 }
 
@@ -40,7 +39,7 @@ header .titulo:hover {
 }
 
 header a {
-    margin: 80px;
+    margin: 50px;
 }
 
 #menu, #menu a {
@@ -76,7 +75,7 @@ header a {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-left:100px ;
+    margin-left: 100px;
 }
 
 .m_hola {
@@ -288,6 +287,7 @@ article p {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction:column
 }
 
 /* CONTACTO */
@@ -298,7 +298,8 @@ article p {
     justify-content: center;
     text-align: center;
 }
-.info{
+
+.info {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -376,7 +377,84 @@ i:hover {
     transform: scale(1.4);
     transition: 0.5s all;
 }
+/* NEWSLETTER */
+.newsletter{
+    margin: 0 350px;
+    padding: 50px auto;
+    border:10px solid #DB4312;
+}
+.newsletter header{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    padding: 100px 0;
+    background-color: #DB4312;  
+}
+.newsletter button{
+    margin-top: 20px;
+    width: 100%;
+    padding: 20px 0 ;
+    background-color: #DB4312;
+    border-radius: 5px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.newsletter a{
+    color: white;
+}
+.newsletter a:hover{
+    border-bottom:1px solid white;
+}
+.newsletter .redes a:hover{
+    border: none;
+}
+.newsletter .bienvenido{
+    padding-top: 10px;
+    text-align: justify;
+}
+.newsletter img {
+    width: 20%;
+}
+.newsletter .info {
+    margin-top: 10px;
+    display: flex;
+    text-align: justify;
+}
 
+.newsletter .c_contacto{
+    background-color: #DB4312;
+    margin-top: 10px;
+    padding: 20px;
+}
+.newsletter h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.habilidades{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: justify;
+    margin: 0 10px;
+    font-size: 8px;
+}
+.habilidades h1{
+    text-align: center;
+}
+.habilidades div {
+    padding: 0 10px;
+}
+.habilidades div img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top:15px;
+}
+.habilidades img {
+    width: 100px;
+    height: 50px;
+}
 /* MEDIA QUERIES */
 /* Lletra més petita per a tablet gran */
 @media (max-width: 952px) {
@@ -391,27 +469,30 @@ i:hover {
     header {
         display: flex;
         justify-content: space-between;
+        
     }
 
     /*icone de menú*/
     .checkbtn {
         display: block;
+        
     }
 
     /* El menú canvia de forma i es crea a altra dimensió*/
     #menu {
         display: block;
-        height: 100vh;
+        height: 70vh;
         width: 100%;
         background: #DB4312;
-
-        position: fixed;
+        
+        position: absolute;
         top: 80px;
         left: -100%;
         z-index: 10;
 
         text-align: center;
         transition: all .5s;
+        
     }
 
     #menu a {
@@ -430,14 +511,16 @@ i:hover {
     #check:checked~#menu {
         left: 0;
     }
-
+   
     .sociales {
         display: none;
     }
-    .portada{
+
+    .portada {
         margin: 0 0 60px 20px;
         font-size: 20px;
     }
+
     .portada img {
         position: absolute;
         object-fit: cover;
@@ -447,11 +530,13 @@ i:hover {
         height: 400px;
         z-index: -1;
     }
+
     .sobre_nosotros {
         font-size: 10px;
         margin: 0;
     }
-    .sobre_nosotros img{
+
+    .sobre_nosotros img {
         display: none;
     }
 
@@ -460,18 +545,26 @@ i:hover {
         text-align: center;
         font-size: 10px;
     }
+
     div .grid {
         display: grid;
         grid-template-columns: auto auto;
         justify-content: center;
     }
-    .formulario{
+
+    .formulario {
         font-size: 10px;
         width: 100%;
         padding: 10px;
     }
 
-    .footer_1{
+    .footer_1 {
         font-size: 15px;
+    }
+    .newsletter{
+        margin: 0%;
+    }
+    .newsletter header{
+        text-align: center;
     }
 }
